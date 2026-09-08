@@ -1,0 +1,166 @@
+*Html practice session-2*
+===================
+
+=================Order List
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My webpage</title>
+</head>
+<body>
+	<ol type="A" reversed>
+		<li> C </li>
+		<li> C++ </li>
+		<li> JAVA </li>
+	</ol>
+</body>
+</html>
+
+==============
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My webpage</title>
+</head>
+<body>
+	<ul type="circle">
+		<li> C </li>
+		<li> C++ </li>
+		<li> JAVA </li>
+	</ul>
+</body>
+</html>
+
+===============
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A Description List</h2>
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+  <dt>Tea</dt>
+  <dd> - Sugar free tea</dd>
+</dl>
+
+</body>
+</html>
+
+====
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Image</h2>
+<img src="image.jpg" alt="abcd" width="500" height="600">
+
+</body>
+</html>
+
+
+====
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Links</h1>
+
+<p><a href="https://www.google.com/" target="_parent">Visit google.com!</a></p>
+
+</body>
+</html>
+
+==============video tag
+
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<video width="50%" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+<!-- <p>
+Video courtesy of 
+<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+</p> -->
+
+</body> 
+</html>
+
+==========Audio tag
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
+
+=============Youtube
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+</body>
+</html>
+
+====iFrame for Youtube====
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player</title>
+</head>
+<body>
+
+    <h2>YouTube Video</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>
+
+==========FORM TAG ===========
+
+<!DOCTYPE html>
+<html>
+<body>
+    <form>
+        Enter a Name:
+        <input type="text" name="t1"><br>
+        <input type="text" name="t2" value="Python" readonly><br>
+        <input type="text" name="t3" value="java"><br>
+        <input type="text" name="t4" placeholder="Enter a Name:"><br>
+        <input type="text" name="t5" maxlength="5" size="2"><br>
+        <input type="text" name="t6" minlength="3"><br>
+        <input type="submit" name="b1"><br>
+    </form>
+</body>
+</html>
