@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Media Queries</title>
+
+    <style>
+
+        /* =========================
+           DEFAULT STYLE
+           ========================= */
+
+        .box {
+            width: 500px;
+            height: 200px;
+            background-color: lightblue;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        /* =========================
+           FOR TABLET
+           Screen width <= 768px
+           ========================= */
+
+        @media screen and (max-width: 768px) {
+
+            .box {
+                width: 300px;
+                background-color: lightgreen;
+                font-size: 25px;
+            }
+
+        }
+
+
+        /* =========================
+           FOR MOBILE
+           Screen width <= 480px
+           ========================= */
+
+        @media screen and (max-width: 480px) {
+
+            .box {
+                width: 200px;
+                background-color: pink;
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Responsive Box
+    </div>
+
+</body>
+</html>

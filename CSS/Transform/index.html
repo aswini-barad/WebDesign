@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transform</title>
+
+    <style>
+
+        /* =========================
+           TRANSFORM: TRANSLATE
+           ========================= */
+
+        .translate {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+
+            transform: translate(50px, 30px);
+        }
+
+
+        /* =========================
+           TRANSFORM: ROTATE
+           ========================= */
+
+        .rotate {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+
+            transform: rotate(45deg);
+        }
+
+
+        /* =========================
+           TRANSFORM: SCALE
+           ========================= */
+
+        .scale {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            transform: scale(1.5);
+        }
+
+
+        /* =========================
+           TRANSFORM: SKEW
+           ========================= */
+
+        .skew {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            transform: skew(20deg, 10deg);
+        }
+
+
+        /* =========================
+           HOVER TRANSFORM
+           ========================= */
+
+        .hover {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            transition: transform 0.5s;
+        }
+
+        .hover:hover {
+            transform: scale(1.3) rotate(10deg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Translate</h2>
+    <div class="translate">Box</div>
+
+    <h2>Rotate</h2>
+    <div class="rotate">Box</div>
+
+    <h2>Scale</h2>
+    <div class="scale">Box</div>
+
+    <h2>Skew</h2>
+    <div class="skew">Box</div>
+
+    <h2>Hover</h2>
+    <div class="hover">Hover Me</div>
+
+</body>
+</html>

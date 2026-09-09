@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /* =========================
+           1. ELEMENT / TAG SELECTOR
+           ========================= */
+        p {
+            color: blue;
+        }
+
+
+        /* =========================
+           2. CLASS SELECTOR
+           ========================= */
+        .box {
+            background-color: yellow;
+        }
+
+
+        /* =========================
+           3. ID SELECTOR
+           ========================= */
+        #heading {
+            color: red;
+        }
+
+
+        /* =========================
+           4. GROUP SELECTOR
+           ========================= */
+        h2, h3 {
+            font-family: Arial;
+        }
+
+
+        /* =========================
+           5. UNIVERSAL SELECTOR
+           ========================= */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* =========================
+           6. DESCENDANT SELECTOR
+           ========================= */
+        div p {
+            color: green;
+        }
+
+
+        /* =========================
+           7. CHILD SELECTOR
+           ========================= */
+        div > span {
+            color: purple;
+        }
+
+
+        /* =========================
+           8. ATTRIBUTE SELECTOR
+           ========================= */
+        input[type="text"] {
+            background-color: lightgray;
+        }
+
+
+        /* =========================
+           9. PSEUDO-CLASS SELECTOR
+           ========================= */
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Element / Tag Selector -->
+    <p>This is paragraph</p>
+
+    <!-- ID Selector -->
+    <h1 id="heading">CSS Selectors</h1>
+
+    <!-- Class Selector -->
+    <div class="box">Class Selector</div>
+
+    <!-- Group Selector -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <!-- Descendant Selector -->
+    <div>
+        <p>Paragraph inside div</p>
+    </div>
+
+    <!-- Child Selector -->
+    <div>
+        <span>Direct child of div</span>
+    </div>
+
+    <!-- Attribute Selector -->
+    <input type="text" placeholder="Enter name">
+
+    <!-- Pseudo-class -->
+    <button>Hover Me</button>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Visibility and Opacity</title>
+
+    <style>
+
+        /* =========================
+           1. VISIBILITY
+           ========================= */
+
+        .visible {
+            visibility: visible;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+
+        /* =========================
+           2. OPACITY
+           ========================= */
+
+        .full {
+            opacity: 1;
+        }
+
+        .half {
+            opacity: 0.5;
+        }
+
+        .transparent {
+            opacity: 0;
+        }
+
+
+        /* =========================
+           HOVER EFFECT
+           ========================= */
+
+        .hover-box {
+            background-color: lightblue;
+            padding: 30px;
+            opacity: 1;
+        }
+
+        .hover-box:hover {
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Visibility</h2>
+
+    <p class="visible">
+        This is visible.
+    </p>
+
+    <p class="hidden">
+        This is hidden but space is still reserved.
+    </p>
+
+
+    <h2>Opacity</h2>
+
+    <p class="full">
+        Opacity 1 - Fully visible
+    </p>
+
+    <p class="half">
+        Opacity 0.5 - Semi transparent
+    </p>
+
+    <p class="transparent">
+        Opacity 0 - Invisible
+    </p>
+
+
+    <h2>Opacity Hover</h2>
+
+    <div class="hover-box">
+        Move mouse over me
+    </div>
+
+</body>
+</html>

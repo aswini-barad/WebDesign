@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Background Image</title>
+
+    <style>
+
+        /* =========================
+           BACKGROUND IMAGE
+           ========================= */
+
+        .box {
+            width: 500px;
+            height: 300px;
+
+            background-image: url("image.jpg");
+
+            /* Prevent image from repeating */
+            background-repeat: no-repeat;
+
+            /* Position of image */
+            background-position: center;
+
+            /* =========================
+               BACKGROUND SIZE
+               ========================= */
+
+            /* Cover the entire box */
+            background-size: cover;
+
+            /* Other values:
+               background-size: contain;
+               background-size: 200px 100px;
+               background-size: 100% 100%;
+            */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        Background Image
+    </div>
+
+</body>
+</html>

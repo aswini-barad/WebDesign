@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Units</title>
+
+    <style>
+
+        /* =========================
+           1. ABSOLUTE UNIT
+           ========================= */
+
+        .px {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+
+        /* =========================
+           2. RELATIVE UNITS
+           ========================= */
+
+        /* % → Relative to parent */
+        .percent {
+            width: 50%;
+            height: 100px;
+            background-color: lightgreen;
+        }
+
+
+        /* em → Relative to parent font-size */
+        .em {
+            font-size: 2em;
+        }
+
+
+        /* rem → Relative to root (html) font-size */
+        .rem {
+            font-size: 2rem;
+        }
+
+
+        /* vw → Viewport width */
+        .vw {
+            width: 50vw;
+            background-color: yellow;
+        }
+
+
+        /* vh → Viewport height */
+        .vh {
+            height: 30vh;
+            background-color: pink;
+        }
+
+
+        /* =========================
+           OTHER UNITS
+           ========================= */
+
+        .cm {
+            width: 5cm;
+        }
+
+        .mm {
+            width: 50mm;
+        }
+
+        .in {
+            width: 2in;
+        }
+
+        .pt {
+            font-size: 20pt;
+        }
+
+        .pc {
+            font-size: 2pc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="px">200px × 100px</div>
+
+    <div class="percent">50% Width</div>
+
+    <p class="em">2em Font Size</p>
+
+    <p class="rem">2rem Font Size</p>
+
+    <div class="vw">50vw Width</div>
+
+    <div class="vh">30vh Height</div>
+
+    <p class="cm">5cm</p>
+
+    <p class="mm">50mm</p>
+
+    <p class="in">2in</p>
+
+    <p class="pt">20pt</p>
+
+    <p class="pc">2pc</p>
+
+</body>
+</html>
