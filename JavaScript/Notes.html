@@ -1,0 +1,249 @@
+*Java script codes*
+<html>
+	<body>
+		<script>
+			// document.write("Hello");
+			// alert("Hi");
+			// confirm("Do you want to continue?");
+
+
+			//====================
+			// var a=10.4;
+			// var b=20;
+			// var sum=a+b;
+			// document.write("Sum= "+sum);
+
+			var a=parseInt(prompt("Enter a number"));
+			var b=parseInt(prompt("Enter another number"));
+			var sum=a+b;
+			document.write("Sum= "+sum);
+
+		</script>
+	</body>
+</html>
+===================================
+<html>
+	<body>
+		<script>
+			
+			var p=parseInt(prompt("Enter principal amount"));
+			var t=parseInt(prompt("Enter Time"));
+			var r=parseInt(prompt("Enter Rate of Interest"));
+			var si=(p*t*r)/100;
+			document.write("Simple Interest is= "+si);
+
+		</script>
+	</body>
+</html>
+=======================
+<html>
+	<body>
+		<script>
+			
+			var num=parseInt(prompt("Enter a number to check Even or Odd"));
+			if(num%2==0){
+				alert("Even number");
+			}
+			else{
+				document.write("Odd number");
+			}
+
+		</script>
+	</body>
+</html>
+=================================
+<html>
+	<body>
+		<script>
+			
+			var num=parseInt(prompt("Enter a number to check number of digit"));
+			if(num<0){
+				num = -num;
+			}
+			
+			if(num <10){
+				alert(num +" is a Single Digit");
+			}
+			else if(num<100){
+				alert("Double digit");
+			}else{
+				alert("More than two digits");
+			}
+
+		</script>
+	</body>
+</html>
+==================================================
+<html>
+	<body>
+		<script>
+			
+			var num1=parseInt(prompt("Enter First number"));
+			var num2=parseInt(prompt("Enter Second number"));
+			var choice=parseInt(prompt("Enter a choice(1-Add,2-Substraction,3-Multiply"));
+
+			switch(choice){
+			case 1:
+				alert("Sum ="+(num1+num2));
+				break;
+			case 2:
+				alert("Substraction ="+(num1-num2));
+				break;	
+			case 3:
+				alert("Multiplication ="+(num1*num2));
+				break;	
+			default:
+				alert("Invalid choice");
+					
+			}
+
+		</script>
+	</body>
+</html>
+========================
+<html>
+	<body>
+		<script>
+			
+		var i = 1;
+
+		while(i<=10){
+			document.write(i+"<br>");
+			i++;
+		}	
+
+		document.write("========"+"<br>");	
+		i=1;
+		do{
+			document.write(i+"<br>");
+			i++;
+		}while(i<=10);			
+		document.write("========"+"<br>");	
+		i=1;
+
+		for(i=1;i<=10;i++){
+			document.write(i+"<br>");
+		}
+
+		</script>
+	</body>
+</html>
+========================================
+<html>
+	<body>
+		<script>
+			
+		var i = 1;
+
+		while(i<=10){
+			document.write(i+"<br>");
+			if(i==5){
+				break;
+			}
+			i++;
+		}	
+
+		document.write("========"+"<br>");	
+		i=1;
+		do{
+			document.write(i+"<br>");
+			if(i==3){
+				break;
+			}
+			i++;
+		}while(i<=10);			
+		document.write("========"+"<br>");	
+		i=1;
+
+		for(i=1;i<=10;i++){
+			if(i>=8){
+				continue;
+			}
+			document.write(i+"<br>");
+		}
+
+		</script>
+	</body>
+</html>
+======================
+<html>
+	<body>
+		<script>
+			
+		var i = 1;
+		var j=1;
+		for(i=1;i<=3;i++){
+			for(j=1;j<=4;j++){
+				document.write(j+"&nbsp;&nbsp;&nbsp;&nbsp;");
+
+			}
+			document.write("<br>");
+		}
+
+		</script>
+	</body>
+</html>
+==============================
+<html>
+    <body>
+        <script>
+
+            var i = 65;
+            var j = 65;
+
+            for(i = 65; i <= 67; i++) {
+
+                for(j = 65; j <= 68; j++) {
+
+                    document.write(String.fromCharCode(j) + "&nbsp;&nbsp;&nbsp;&nbsp;");
+
+                }
+
+                document.write("<br>");
+            }
+
+        </script>
+    </body>
+</html>
+=====================================
+<html>
+    <body>
+        <script>
+        	function show(){
+        		document.write("Hi");
+        	}
+
+        	show();
+
+        </script>
+    </body>
+</html>
+=========================
+<html>
+    <body>
+        <script>
+        	function add(a,b){
+        		sum = a+b;
+        		alert("Sum ="+sum);
+        	}
+
+        	add(10,20);
+
+        </script>
+    </body>
+</html>
+=======================
+<html>
+    <body>
+        <script>
+        	function add(a,b){
+        		sum = a+b;
+        		return sum;
+        	}
+
+        	s =add(10,20);
+        	document.write("sum ="+s);
+
+        </script>
+    </body>
+</html>
