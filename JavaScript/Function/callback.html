@@ -1,0 +1,25 @@
+<!-- A function passed to another function is called a callback function. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function show(d){
+			document.write("Show start"+"<br>");
+			d();
+			document.write("Show end"+"<br>");
+		}
+
+		function disp(){
+			document.write("Inside disp"+"<br>");
+		}
+
+		show(disp);
+	</script>
+
+</body>
+</html>
+/*OP
+Show start
+Inside disp
+Show end */

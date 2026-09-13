@@ -1,0 +1,137 @@
+<html>
+    <body>
+        <script>
+
+        	var p=parseInt(prompt("Enter principal amount"));
+			var t=parseInt(prompt("Enter Time"));
+			var r=parseInt(prompt("Enter Rate of Interest"));
+
+        	function si(p,t,r){
+        		si = (p*t*r)/100;
+        		return si;
+        	}
+
+        	si =si(p,t,r);
+        	document.write("Simple Interst is ="+si);
+
+        </script>
+    </body>
+</html>
+================
+<html>
+    <body>
+    	<form>
+    		<input type="button" value="Click Me" onclick="show()">
+    	</form>
+        <script>
+        	document.write("A");
+        	function show(){
+        		document.write("Hello");
+        	}
+        	document.write("B");
+        </script>
+    </body>
+</html>
+===========================
+<html>
+    <body>
+    	<form>
+    		Principal:
+    		<input type="text" id="p"><br>
+    		Interest Rate:
+    		<input type="text" id="r"><br>
+    		Time:
+    		<input type="text" id="t"><br>
+    		<input type="button" value="Calculate" onclick="siCalc()">
+    	</form>
+        <script>
+        	
+        	function siCalc(){
+    			var p = document.getElementById("p").value; 
+    			var r = document.getElementById("r").value; 
+    			var t = document.getElementById("t").value; 
+    			var si = (p * r * t) / 100; 
+    			document.write("Simple Interest = " + si);
+        		
+        	}
+        	
+        </script>
+    </body>
+</html>
+======================
+
+<html>
+    <body>
+
+        <form>
+            Principal:
+            <input type="text" id="p"><br>
+
+            Interest Rate:
+            <input type="text" id="r"><br>
+
+            Time:
+            <input type="text" id="t"><br>
+
+            <input type="button" value="Calculate" onclick="siCalc()">
+        </form>
+
+        <p id="result"></p>
+
+        <script>
+
+            function siCalc() {
+
+                var p = document.getElementById("p").value;
+                var r = document.getElementById("r").value;
+                var t = document.getElementById("t").value;
+
+                var si = (p * r * t) / 100;
+
+                document.getElementById("result").innerHTML =
+                    "Simple Interest = " + si;
+            }
+
+        </script>
+
+    </body>
+</html>
+=======================
+
+<html>
+    <body>
+
+        <form>
+            Principal:
+            <input type="text" id="p"><br>
+
+            Interest Rate:
+            <input type="text" id="r"><br>
+
+            Time:
+            <input type="text" id="t"><br>
+
+            <input type="button" value="Calculate" onclick="siCalc()">
+
+            Result:
+            <input type="text" id="result">
+        </form>
+
+
+        <script>
+
+            function siCalc() {
+
+                var p = document.getElementById("p").value;
+                var r = document.getElementById("r").value;
+                var t = document.getElementById("t").value;
+
+                var si = (p * r * t) / 100;
+
+                document.getElementById("result").value = si;
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <body>
+    	<form>
+    		Principal:
+    		<input type="text" id="p"><br>
+    		Interest Rate:
+    		<input type="text" id="r"><br>
+    		Time:
+    		<input type="text" id="t"><br>
+    		<input type="button" value="Calculate" onclick="siCalc()">
+    	</form>
+        <script>
+        	
+        	function siCalc(){
+    			var p = document.getElementById("p").value; 
+    			var r = document.getElementById("r").value; 
+    			var t = document.getElementById("t").value; 
+    			var si = (p * r * t) / 100; 
+    			document.write("Simple Interest = " + si);
+        		
+        	}
+        	
+        </script>
+    </body>
+</html>

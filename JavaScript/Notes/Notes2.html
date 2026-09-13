@@ -1,0 +1,273 @@
+==============================Function called by a variable================================++++====
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function show(){
+			document.write("Show function");
+		}
+		s= show;
+		s();
+	</script>
+
+</body>
+</html>
+==================function assigned to a constant variable===============
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		const s = function show(){
+			document.write("Show function2");
+		}
+		
+		s();
+	</script>
+
+</body>
+</html>
+=================Function Expression(Nameless Function)================================
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		const s = function (){
+			document.write("Show function3");
+		}
+		
+		s();
+	</script>
+
+</body>
+</html>
+================ alternate way of function expression==============
+const add = function(a, b) {
+    return a + b;
+};
+
+console.log(add(10, 20));
+
+=========================Arrow Function (important)==========
+Syntax:
+const functionName = (parameters) => {
+    // statements
+};
+
+Example1
+
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		const s = () => {
+			document.write("Arrow-Show function");
+		}
+		
+		s();
+	</script>
+
+</body>
+</html>
+
+Example2: (parametrised)
+
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		const s = (a,b) => {
+			document.write("Arrow-add function="+(a+b));
+		}
+		
+		s(10,20);
+	</script>
+
+</body>
+</html>
+======================alternate approach====
+const add = (a, b) => {
+    return a + b;
+};
+
+OR 
+
+const add = (a, b) => a + b;
+=======================
+const multiply = (a, b) => a * b;
+
+console.log(multiply(5, 4));
+
+=====================Default Parameters=========
+
+function greet(name = "Guest") {
+    console.log("Hello " + name);
+}
+
+greet("Rahul");
+greet();
+
+=========================Rest Parameters(same as Var Args in Java)============
+function add(...numbers) {
+
+    let sum = 0;
+
+    for (let n of numbers) {
+        sum += n;
+    }
+
+    return sum;
+}
+
+console.log(add(10, 20));
+console.log(add(10, 20, 30, 40));
+
+============== arguments Object==============
+
+function test() {
+    console.log(arguments.length);
+}
+
+test(10, 20, 30); //OP = 3
+
+==========Callback Function============
+//A function passed to another function is called a callback function.
+
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function show(d){
+			document.write("Show start"+"<br>");
+			d();
+			document.write("Show end"+"<br>");
+		}
+
+		function disp(){
+			document.write("Inside disp"+"<br>");
+		}
+
+		show(disp);
+	</script>
+
+</body>
+</html>
+/*OP
+Show start
+Inside disp
+Show end */
+
+======another example===
+function greet(name) {
+    console.log("Hello " + name);
+}
+
+function process(callback) {
+    callback("Rahul");
+}
+
+process(greet);
+
+=============Higher-Order Function==========
+A function is called a higher-order function when it:
+
+accepts another function as an argument, or
+returns another function.
+
+Example:
+
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(calculate(10, 20, add));
+
+================Function Returning Another Function===========
+function outer() {
+
+    function inner() {
+        console.log("Inner function");
+    }
+
+    return inner;
+}
+
+let result = outer(); //contains the reference of Inner function
+
+result(); //here execution happens
+
+===================Function Scope(var) vs Block Scope(let)/const is always fixed===========
+function test() {
+
+    if (true) {
+        var x = 10;
+    }
+
+    console.log(x);
+}
+
+test(); //op = 10
+
+function test() {
+
+    if (true) {
+        let x = 10;
+    }
+
+    console.log(x); // Error
+}
+
+============Immediately Invoked Function Expression — IIFE====
+(function() {
+    console.log("Hello");
+})();
+
+OR 
+
+(() => {
+    console.log("Hello");
+})();
+
+===============Closures=============
+
+A closure occurs when an inner function remembers variables 
+from its outer function even after the outer function has finished executing.
+
+function outer() {
+
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
+    };
+
+    return inner;
+}
+
+let counter = outer();
+
+counter();
+counter();
+counter();
+
+OR 
+
+function outer() {
+
+    let count = 0;
+
+    return function() {
+        count++;
+        console.log(count);
+    };
+}
+
+let counter = outer();
+
+counter();
+counter();
+counter();
