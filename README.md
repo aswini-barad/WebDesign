@@ -1,64 +1,53 @@
-## 🌐 HTML & CSS
+## 🌐 HTML, CSS & JavaScript
 
-This section contains my practice programs and notes while learning **HTML and CSS**.
+This section contains my **practice programs and notes** while learning HTML, CSS, and JavaScript.
 
-> **Note:** Most of the practice programs in this section use **Internal CSS** (`<style>` tag) to keep the examples simple and easy to understand.
-> **External CSS** is the preferred approach for real-world projects because it promotes reusability, maintainability, and separation of HTML and CSS.
+> **Note:** Most HTML/CSS examples use **Internal CSS** for simplicity. **External CSS** is preferred for real-world projects for better reusability and maintainability.
 
-### 📌 HTML Topics
+### 📌 HTML
 
-* HTML Basic Structure
-* Headings and Paragraphs
-* Links and Images
-* Lists
-* Tables
-* Forms
-* Input Types
+* Basic Structure
+* Headings, Paragraphs, Links & Images
+* Lists & Tables
+* Forms & Input Types
 * Semantic HTML
 * HTML Attributes
 
-### 🎨 CSS Topics
+### 🎨 CSS
 
-* Types of CSS
-
-  * Inline CSS
-  * Internal CSS
-  * External CSS
-* CSS Selectors
-* Text Properties
-* CSS Box Model
-* Margin and Padding
-* Display Property
-* Visibility and Opacity
-* CSS Units
-* Background Properties
-* Flexbox
-* Media Queries
-* CSS Transitions
-* CSS Transform
-* CSS Animations
+* Inline, Internal & External CSS
+* Selectors & Text Properties
+* Box Model, Margin & Padding
+* Display, Visibility & Opacity
+* Units & Backgrounds
+* Flexbox & Media Queries
+* Transitions, Transforms & Animations
 * Form Styling
 
-### 🎯 CSS Usage
+### ⚡ JavaScript
 
-| CSS Type         | Usage                                               |
-| ---------------- | --------------------------------------------------- |
-| **Inline CSS**   | Used for small, specific styles                     |
-| **Internal CSS** | Mainly used in my practice programs                 |
-| **External CSS** | Preferred and commonly used for real-world projects |
+* Variables & Data Types
+* Operators & Conditional Statements
+* Loops & Functions
+* Arrow Functions
+* Arrays & Objects
+* Scope
+* DOM Manipulation
+* Events & Basic Form Validation
 
 ### 📂 Practice
 
-The programs demonstrate HTML and CSS concepts through simple examples. The focus is on understanding **syntax, selectors, properties, layouts, forms, responsive design, and basic animations**.
+The examples focus on understanding **syntax, styling, layouts, programming logic, DOM manipulation, responsive design, and basic animations**.
 
 ### 🛠️ Technologies
 
 * HTML5
 * CSS3
+* JavaScript
 
 ### 🚀 How to Run
 
-1. Clone or download this repository.
-2. Open the `.html` file in a web browser.
-3. For external CSS examples, make sure the `.css` file is in the correct location.
+1. Clone or download the repository.
+2. Open the `.html` file in a browser.
+3. Make sure linked `.css` and `.js` files are in the correct location.
 4. Refresh the browser after making changes.
