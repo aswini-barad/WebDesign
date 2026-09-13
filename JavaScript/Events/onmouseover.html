@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2 id="text"
+        onmouseover="changeText()"
+        onmouseout="normalText()">
+        Move mouse here
+    </h2>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").style.color = "red";
+        }
+
+        function normalText() {
+            document.getElementById("text").style.color = "black";
+        }
+    </script>
+
+</body>
+</html>
